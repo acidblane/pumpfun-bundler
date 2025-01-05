@@ -73,6 +73,55 @@
             animation: slideIn 1s ease-out;
         }
 
+        .container p {
+            margin: 1rem 0;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            margin: 1rem 0.5rem;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+            animation: fadeInUp 2s ease-out;
+        }
+
         /* Animations */
         @keyframes fadeIn {
             from {
@@ -87,6 +136,17 @@
             from {
                 opacity: 0;
                 transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -129,6 +189,32 @@
             This open-source tool enables efficient self-bundling scripts for launching tokens with 20 different wallets and profiles. Enjoy launches that are completely bubble maps-proof and anti-Photon SB marks.
         </p>
         <a href="https://github.com/prayan090909/pumpfun-bundler" class="btn">View on GitHub</a>
+        <h2>Features</h2>
+        <ul>
+            <li>💊 Intuitive User Interface: Completely automatic and user-friendly.</li>
+            <li>🧑 Random Profiles: Authenticity ensured through random token holding.</li>
+            <li>🔥 Custom LUT Program: Optimize your strategies effortlessly.</li>
+            <li>🚨 Supply Management: Automatic deviation for efficient launches.</li>
+            <li>🔔 Configurable Buyers: Customize up to 20 keypair buyers.</li>
+            <li>🤖 Unmatched Performance: Exceptional stability and speed.</li>
+            <li>📂 Onchain Integration: Bespoke onchain program support.</li>
+            <li>💸 Sell Strategies: Complex percentage-based strategies.</li>
+        </ul>
+        <h2>Installation</h2>
+        <pre>
+git clone https://github.com/prayan090909/pumpfun-bundler.git
+cd pumpfun-launcher
+npm install
+# Create a .env file with:
+# SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
+# PRIVATE_KEY=<your-private-key-bs58>
+npm start
+        </pre>
+        <h2>Support and Contributions</h2>
+        <p>
+            As an open-source project, we welcome contributions and feedback. If you have any questions or need assistance, please contact us on Telegram at 
+            <a href="https://t.me/acidblane">@acidblane</a>.
+        </p>
     </div>
     <footer>
         <p>&copy; 2025 Pump.Fun Bundler. All rights reserved.</p>
