@@ -1,0 +1,162 @@
+/* Load the custom font */
+@font-face {
+    font-family: 'CartoonVintage';
+    src: url('./fonts/VintageOne.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+    font-family: 'CartoonVintage', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #f4f4f9, #e0f7fa);
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+/* Bot Animation */
+.bot-container {
+    margin: 2rem auto;
+    width: 150px;
+    animation: fadeIn 2s ease-out;
+}
+
+.bot-arm {
+    transform-origin: top right;
+    animation: wave 1s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.container h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    animation: slideIn 1s ease-out;
+}
+
+.container p {
+    margin: 1rem 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #333;
+    color: white;
+    margin-top: 3rem;
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
