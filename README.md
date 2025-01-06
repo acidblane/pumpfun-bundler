@@ -6,7 +6,7 @@ This open-source and free tool offers the most efficient self-bundling script fo
 
 Enjoy launches that are completely bubble maps-proof and anti-Photon SB marks.
 
-Take a look at the github repo here: https://github.com/prayan090909/pumpfun-bundler
+Take a look at the github repo here: https://github.com/acidblane/pumpfun-bundler
 
 
 
