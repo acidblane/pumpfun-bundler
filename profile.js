@@ -2,7 +2,7 @@
 $(document).ready(function () {
 	
   // array with texts to type in typewriter
-  var dataText = [ "Devoted to the design of experiences with code."];
+  var dataText = [ "Making the fastest and most secure bots in Solana space."];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -194,9 +194,3 @@ window.addEventListener("scroll", function(){
 
 
 });
-
-// Highlight features on hover
-$('.feature').hover(
-    function () { $(this).css('color', '#ff9900'); },
-    function () { $(this).css('color', ''); }
-);
